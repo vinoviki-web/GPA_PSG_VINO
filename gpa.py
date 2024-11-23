@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.title("GPA Calculator for PSG TECH")
+st.title("GPA Calculator for  TECH")
 
 num_courses = st.number_input("Enter the number of subjects:", min_value=1, step=1)
 
@@ -20,6 +20,5 @@ if st.button("Calculate GPA"):
         weighted_sum = sum(grade * credit for grade, credit in zip(grades, credits))
         gpa = weighted_sum / total_credits if total_credits > 0 else 0
         st.success(f"Your GPA is: {gpa:.2f}")
-        st.write(f"Total Credits: {total_credits}")
     except:
         st.error("Something went wrong. Please check your inputs.")
