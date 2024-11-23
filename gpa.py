@@ -20,5 +20,6 @@ if st.button("Calculate GPA"):
         weighted_sum = sum(grade * credit for grade, credit in zip(grades, credits))
         gpa = weighted_sum / total_credits if total_credits > 0 else 0
         st.success(f"Your GPA is: {gpa:.2f}")
+        st.write(f"Total Credits: {total_credits}")
     except:
         st.error("Something went wrong. Please check your inputs.")
