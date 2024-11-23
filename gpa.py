@@ -2,7 +2,7 @@ import streamlit as st
 
 st.title("GPA Calculator for PSG TECH")
 
-num_courses = st.number_input("Enter the number of subjects:", min_value=0, step=1)
+num_courses = st.number_input("Enter the number of subjects:", min_value=1, step=1)
 
 grades = []
 credits = []
